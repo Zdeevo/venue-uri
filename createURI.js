@@ -8,8 +8,8 @@ const createURI = (town, venue) => {
 
 /* Logging outputs of different arguments to test basic functionality */
 
-console.log(createURI('Bristol', 'Thekla'));
-console.log(createURI('Weston-Super-Mare', 'The Playhouse'));
-console.log(createURI('A1!!23 B4??56', 'C7$$89'));
+// console.log(createURI('Bristol', 'Thekla'));
+// console.log(createURI('Weston-Super-Mare', 'The Playhouse'));
+// console.log(createURI('A1!!23 B4??56', 'C7$$89'));
 
 export default createURI;
