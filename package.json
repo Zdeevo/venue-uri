@@ -1,0 +1,24 @@
+{
+  "name": "@stevemag/venue-uri",
+  "version": "1.0.0",
+  "description": "creates venue URI from 'town name' and 'venue name' strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zdeevo/venue-uri.git"
+  },
+  "keywords": [
+    "venue",
+    "ents24",
+    "devops"
+  ],
+  "author": "Steve Maguire <semaguire75@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zdeevo/venue-uri/issues"
+  },
+  "homepage": "https://github.com/Zdeevo/venue-uri#readme"
+}
