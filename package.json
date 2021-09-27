@@ -5,7 +5,8 @@
   "main": "createURI.js",
   "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "check": "node venueURI.js"
   },
   "repository": {
     "type": "git",

@@ -53,3 +53,20 @@ A pull request was also created with a deliberate mistake in the code to intenti
 A GitHub Action to create an empty HTTP POST request using the commit hash of the event that triggered the action, in this case a 'push' to 'main' branch. For each 'push' event the commit hash is extracted, appended to the url and the request sent.
 
 Details of each request run can be found in the **'Actions'** section of the repo, under the **'HTTP POST request with commit hash'** workflow.
+
+# EXTRA TASKS
+
+## A. **'check'** script GET request - venueURI.js
+
+Takes command-line arguments and passes them into a URI string `('https://www.ents24.com/[venue-uri])` for a GET request using the 'HTTPS' module from the default Node library.
+
+This can be run with the command `npm run check [arg1] [arg2]` which runs a GET request and outputs the resulting status code to the console.
+
+### Example:
+
+Running the command `npm run check Bristol Thekla` in the terminal will send a GET request to `https://www.ents24.com/bristol-events/thekla` and should output `200` (OK) to the console.
+
+**N.B.**
+
+- Passing incorrent or mispelled town/venue data will result in the status code `404` (Not Found) being output to the console;
+- Only the first 2 arguments will be passed to the GET request, any others will be ignored.
