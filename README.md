@@ -43,4 +43,4 @@ A pull request was also created with a deliberate mistake in the code to intenti
 
 A GitHub Action to create an empty HTTP POST request using the commit hash of the event that triggered the action, in this case a push to 'main' branch.
 
-Details of each request run can be found in the 'Actions' section of the repo, under the **'HTTP POST request with commit hash'** workflow.
+Details of each request run can be found in the **'Actions'** section of the repo, under the **'HTTP POST request with commit hash'** workflow.
