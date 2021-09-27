@@ -30,3 +30,7 @@ Use the command _'npm test'_ in the terminal to run the test suite.
 All tests should **'PASS'** with expected outputs matching those logged in the inital manual testing detailed above.
 
 ## GitHub Actions
+
+The unit test suite will run on all `pull requests`, testing on various versions of node.js `**(12.x, 14.x, 16.x)**`.
+
+A pull request was also created with a deliberate mistake to intentionally fail the test.
