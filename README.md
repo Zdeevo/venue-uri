@@ -6,7 +6,9 @@ Challenge:
 - Write a set of tests to confirm various cses work as expected;
 - Use GitHub Actions to automate testing when certain GitHub events are triggered.
 
-## createURI.js
+# CODE TASK
+
+## A. createURI.js
 
 Contains a simple function which creates a URI string using the 'town' and 'venue' arguments in the format `/[town-slug]-events/[venue-slug]`.
 
@@ -21,7 +23,7 @@ As expected:
 
 Console logs can be un-commented if this level of manual testing is required.
 
-## createURI.test.js
+## B. createURI.test.js
 
 Contains a suite of three simple tests to check that the correct URI is returned for various arguments containing uppercase letters, spaces and special characters.
 
@@ -29,4 +31,12 @@ Use the command _'npm test'_ in the terminal to run the test suite.
 
 All tests should **'PASS'** with expected outputs matching those logged in the inital manual testing detailed above.
 
-## GitHub Actions
+# DEVOPS TASK
+
+## A. GitHub Actions setup - venue-uri-test.yaml
+
+The unit test suite will run on all `pull requests`, testing on various versions of node.js `**(12.x, 14.x, 16.x)**`.
+
+A pull request was also created with a deliberate mistake in the code to intentionally fail the test. Details of the failed checks can be found in the **'Checks'** tab of the **'Pull requests'** section of the repo.
+
+## B. HTTP POST request
