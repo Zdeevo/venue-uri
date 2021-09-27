@@ -33,7 +33,7 @@ Contains a suite of three simple tests to check that the correct URI is returned
 
 [Jest](https://jestjs.io/) was used for the testing.
 
-Use the command _'npm test'_ in the terminal to run the test suite.
+Use the command `npm test` in the terminal to run the test suite.
 
 All tests should **'PASS'** with expected outputs matching those logged in the inital manual testing detailed above.
 
