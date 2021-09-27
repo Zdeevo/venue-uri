@@ -39,6 +39,8 @@ The unit test suite will run on all `pull requests`, testing on various versions
 
 A pull request was also created with a deliberate mistake in the code to intentionally fail the test. Details of the failed checks can be found in the **'Checks'** tab of the **'Pull requests'** section of the repo.
 
-## B. HTTP POST request
+## B. HTTP POST request - http-hash-request.yaml
 
 A GitHub Action to create an empty HTTP POST request using the commit hash of the event that triggered the action, in this case a push to 'main' branch.
+
+Details of each request run can be found in the 'Actions' section of the repo, under the **'HTTP POST request with commit hash'** workflow.
