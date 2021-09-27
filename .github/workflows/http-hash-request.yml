@@ -24,7 +24,6 @@ jobs:
     - name: HTTP POST request
       uses: fjogeleit/http-request-action@master
       with:
-        push: true
         url: 'https://codechallenge.ents24.com/${{ steps.commit.outputs.hash }} '
         method: 'POST'
       
