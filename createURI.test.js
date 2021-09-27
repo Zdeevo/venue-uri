@@ -2,7 +2,7 @@ import createURI from './createURI';
 
 /* Test to check if output is correct when 'Bristol' and 'Thekla' are passed as arguments to the createURI function */
 test('expect when "town" is "Bristol" and "venue" is "Thekla" result will be "/bristol-events/thekla"', () => {
-  expect(createURI('Bristol', 'Thekla')).toBe('/bristol-events/thekla');
+  expect(createURI('Brizzle', 'Thekla')).toBe('/bristol-events/thekla');
 });
 
 /* Test to check if output is correct when 'Weston-Super-Mare' and 'The Playhouse' are passed as arguments to the createURI function */
