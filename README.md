@@ -1,1 +1,32 @@
 # venue-uri
+
+Challenge:
+
+- Create a function that generates a venue URI by passing 'town' and 'venue' arguments;
+- Write a set of tests to confirm various cses work as expected;
+- Use GitHub Actions to automate testing when certain GitHub events are triggered.
+
+## createURI.js
+
+Contains a simple function which creates a URI string using the 'town' and 'venue' arguments in the format `/[town-slug]-events/[venue-slug]`.
+
+The inputs of each argument are first 'slugified' `(converted to lowercase, special characters removed and spaces replaced with hyphens)` then returned as a URI.
+
+I initally carried out some simple manual testing of the function using multiple console logs with different arguments to ensure the correct output was returned for each `(i.e. the function works!)`
+As expected:
+
+- `('Bristol', 'Thekla')` logged `/bristol-events/thekla`
+- `('Weston-Super-Mare', 'The Playhouse')` logged `/weston-super-mare-events/the-playhouse`
+- `('A1!!23 B4??56', 'C7$$89')` logged `('/a123-b456-events/c789')`
+
+Console logs can be un-commented if this level of manual testing is required.
+
+## createURI.test.js
+
+Contains a suite of three simple tests to check that the correct URI is returned for various arguments containing uppercase letters, spaces and special characters.
+
+Use the command _'npm test'_ in the terminal to run the test suite.
+
+All tests should **'PASS'** with expected outputs matching those logged in the inital manual testing detailed above.
+
+## GitHub Actions
