@@ -39,13 +39,13 @@ All tests should **'PASS'** with expected outputs matching those logged in the i
 
 # DEVOPS TASK
 
-## A. GitHub Actions setup - venue-uri-test.yaml
+## A. GitHub Actions setup - venue-uri-test.yml
 
 The unit test suite will run on all 'pull requests', testing on various versions of node.js '**(12.x, 14.x, 16.x)**'.
 
 A pull request was also created with a deliberate mistake in the code to intentionally fail the test. Details of the failed checks can be found in the **'Checks'** tab of the **'Pull requests'** section of the repo, or in the **'Actions'** section of the repo, under the **'venue-uri-test'** workflow.
 
-## B. HTTP POST request - http-hash-request.yaml
+## B. HTTP POST request - http-hash-request.yml
 
 [HTTP Request Action](https://github.com/fjogeleit/http-request-action) was used for the HTTP POST request.
 [Commit Hash](https://github.com/pr-mpt/actions-commit-hash) was used to extract the commit hash.
@@ -70,3 +70,9 @@ Running the command `npm run check Bristol Thekla` in the terminal will send a G
 
 - Passing incorrent or mispelled town/venue data will result in the status code `404` (Not Found) being output to the console;
 - Only the first 2 arguments will be passed to the GET request, any others will be ignored.
+
+## B. Run ESLint on pull request
+
+On pull request, the unit testing workflow `venue-uri-test.yml` will also run ESLint. If error are found, the workflow will stop before running the actual tests.
+
+## !!!TESTIING!!!
