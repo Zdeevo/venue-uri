@@ -75,4 +75,4 @@ Running the command `npm run check Bristol Thekla` in the terminal will send a G
 
 On pull request, the unit testing workflow `venue-uri-test.yml` will also run ESLint. If error are found, the workflow will stop before running the actual tests.
 
-## !!!TESTIING!!!
+The `build/test` step requires the `run-linters` step to complete without errors, or it is skipped and the checking process fails. If there are no linting errors, the unit tests will run.
