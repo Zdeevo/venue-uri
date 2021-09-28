@@ -71,6 +71,8 @@ Running the command `npm run check Bristol Thekla` in the terminal will send a G
 - Passing incorrent or mispelled town/venue data will result in the status code `404` (Not Found) being output to the console;
 - Only the first 2 arguments will be passed to the GET request, any others will be ignored.
 
-## B. ESLint analysis on PR - linter-nofix.yml
+## B. ESLint analysis on PR
 
 TEST TEXT FOR ESLINT TEST BRANCH
+
+DELIBERATE MISTAKE IN VARIABLE NAME IN `venueURI.js`
