@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "check": "node venueURI.js",
-    "lint": "eslint --no-fix --max-warnings 0"
+    "lint": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
