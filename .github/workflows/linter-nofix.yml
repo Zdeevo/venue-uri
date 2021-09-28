@@ -1,0 +1,19 @@
+# This workflow will run ESLint on a new pull request and is set not to automatically fix errors (no-fix) and will show all warnings (max-warnings 0).
+# This will only continue with the unit tests if no problems are reported.
+
+name: Lint files on pull request
+
+on:
+
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run EsLint
+      run: npm run lint
