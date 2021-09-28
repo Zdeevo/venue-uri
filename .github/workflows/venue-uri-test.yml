@@ -4,13 +4,33 @@
 name: venue-uri-test
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, github-actions-lint ]
 
 jobs:
+  run-linters:
+    name: Run linters
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js 
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      # ESLint and Prettier must be in `package.json`
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Run linters
+        uses: wearerequired/lint-action@v1
+        with:
+          eslint: true
   build:
+    needs: run-linters
 
     runs-on: ubuntu-latest
 
@@ -20,9 +40,6 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/setup-node@v2
-    - name: Run ESLint
-      run: npm run lint
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
