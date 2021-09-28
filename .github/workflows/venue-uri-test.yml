@@ -29,6 +29,8 @@ jobs:
         uses: wearerequired/lint-action@v1
         with:
           eslint: true
+          eslint_args: '--max-warnings 0'
+          continue_on_error: false
   build:
     needs: run-linters
 
