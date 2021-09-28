@@ -30,7 +30,7 @@ jobs:
         with:
           eslint: true
           eslint_args: '--max-warnings 0'
-          continue_on_error: false
+          continue_on_error: true
   build:
     needs: run-linters
 
